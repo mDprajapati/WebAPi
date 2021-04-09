@@ -83,18 +83,18 @@ namespace WebAPI.Controllers
             return Ok(employee);
         }
 
-        [HttpDelete]
-        [Route("api/deleteemployee")]
-        public IHttpActionResult DeleteEmployee(int ID)
-        {
-            var employe = db.Employees.Find(ID);
-            if (employe != null)
-            {
-                db.Employees.Remove(employe);
-                db.SaveChanges();
-            }
-            return Ok(employe);
-        }
+        //[HttpDelete]
+        //[Route("api/deleteemployee")]
+        //public IHttpActionResult DeleteEmployee(int ID)
+        //{
+        //    var employe = db.Employees.Find(ID);
+        //    if (employe != null)
+        //    {
+        //        db.Employees.Remove(employe);
+        //        db.SaveChanges();
+        //    }
+        //    return Ok(employe);
+        //}
 
         [HttpGet]
         [Route("api/GetemployeeByID")]
